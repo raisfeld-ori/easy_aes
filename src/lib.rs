@@ -96,17 +96,6 @@ fn unpad(data: &[u8]) -> Vec<u8> {
   else{data[..data.len() - *padding_size.unwrap() as usize].to_vec()}
 }
 
-#[allow(dead_code)]
-pub fn xor_encrypt(data: Vec<u8>, key: &[u8]) -> Vec<u8>{
-  let mut encrypted = Vec::new();
-
-  for (i, &byte) in data.iter().enumerate() {
-    encrypted.push(byte ^ key[i % key.len()])
-  }
-
-  encrypted
-}
-
 
 fn padding(username: &str, password: &str, size: usize) -> Vec<u8> {
   let mut padded_username = username.chars().collect::<Vec<char>>();
@@ -124,15 +113,6 @@ fn padding(username: &str, password: &str, size: usize) -> Vec<u8> {
   // Convert the padded username to byte vector and this is the IV.
   let padded_username_bytes = padded_username.into_iter().map(|c| c as u8).collect::<Vec<u8>>();
   padded_username_bytes
-}
-
-#[test]
-fn test_xor_encryption(){
-  let key = b"scrt";
-  let data = b"hello, world!";
-  let encrypted = xor_encrypt(data.to_vec(), key);
-  let decrypted: &[u8] = &xor_encrypt(encrypted, key);
-  assert_eq!(data, decrypted);
 }
 
 #[test]
