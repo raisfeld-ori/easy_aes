@@ -22,3 +22,7 @@ fn main(){
     println!("Decrypted: {}", String::from_utf8_lossy(decrypted.as_slice())); // my very important secret
 }
 ```
+
+## credits
+
+original code was made by [aviv segal](https://github.com/aviv-segal) for a shared project
