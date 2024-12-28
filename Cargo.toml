@@ -2,7 +2,7 @@
 name = "very-simple-aes"
 description = "simple AES cbc encryption and decryption package"
 license = "MIT"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 
 [dependencies]
