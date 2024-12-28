@@ -1,4 +1,4 @@
-# easy AES
+# simple AES
 
 aes is complicated, and I realized I still have some old cbc functions for encrypting and decrypting.
 So I thought I would turn it into a package so you can also use it!

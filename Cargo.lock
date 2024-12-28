@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "easy_aes"
-version = "1.0.0"
-dependencies = [
- "rust-crypto",
-]
-
-[[package]]
 name = "fuchsia-cprng"
 version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -92,6 +85,13 @@ name = "rustc-serialize"
 version = "0.3.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe834bc780604f4674073badbad26d7219cadfb4a2275802db12cbae17498401"
+
+[[package]]
+name = "simple_aes"
+version = "1.0.0"
+dependencies = [
+ "rust-crypto",
+]
 
 [[package]]
 name = "time"
