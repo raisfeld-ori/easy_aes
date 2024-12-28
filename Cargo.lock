@@ -87,13 +87,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fe834bc780604f4674073badbad26d7219cadfb4a2275802db12cbae17498401"
 
 [[package]]
-name = "simple_aes"
-version = "1.0.0"
-dependencies = [
- "rust-crypto",
-]
-
-[[package]]
 name = "time"
 version = "0.1.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -102,6 +95,13 @@ dependencies = [
  "libc",
  "wasi",
  "winapi",
+]
+
+[[package]]
+name = "very-simple-aes"
+version = "1.0.0"
+dependencies = [
+ "rust-crypto",
 ]
 
 [[package]]

@@ -1,5 +1,5 @@
 [package]
-name = "simple_aes"
+name = "very-simple-aes"
 description = "simple AES cbc encryption and decryption package"
 license = "MIT"
 version = "1.0.0"
